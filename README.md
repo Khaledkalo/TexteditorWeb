@@ -1,4 +1,5 @@
-"# TexteditorWeb" 
+# TexteditorWeb
+Creating a Texteditor using HTML, CSS, JavaScript
 
 
 ### Texteditor
