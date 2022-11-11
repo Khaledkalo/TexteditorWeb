@@ -2,103 +2,159 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Editor</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Text Editor</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 
 <body>
-    <section>
-        <div class="firstMenu">
-            <button type="button" onclick="bold()" data-toggle="tooltip" data-placement="top" title="Bold Text">
-                <i class="fa-solid fa-bold"></i>
-            </button>
 
-            <button type="button" onclick="italic()" data-toggle="tooltip" data-placement="top" title="Italic Text">
-                <i class="fa-solid fa-italic"></i>
-            </button>
+	<section>
+		<div class="firstMenu">
+			<button onclick="bold()" data-toggle="tooltip" data-placement="top" title="Bold Text">
+				<i class="fa-solid fa-bold"></i>
+			</button>
+			<button onclick="italic()" data-toggle="tooltip" data-placement="top" title="Italic Text">
+				<i class="fa-solid fa-italic"></i>
+			</button>
+			<button onclick="underline()" data-toggle="tooltip" data-placement="top" title="underline">
+				<i class="fa-solid fa-underline"></i>
+			</button>
+			<button onclick="strikeThrough()" data-toggle="tooltip" data-placement="top" title="line-through">
+				<i class="fa-solid fa-strikethrough"></i>
+			</button>
 
-            <button type="button" onclick="underline()" data-toggle="tooltip" data-placement="top" title="Bold Text">
-                <i class="fa-solid fa-underline"></i>
-            </button>
 
-            <button type="button" onclick="alignLeft()" data-toggle="tooltip" data-placement="top" title="Left Align">
-                <i class="fa-solid fa-align-left"></i>
-            </button>
+			<!-- not finished -->
+			<button onclick="superScript()" data-toggle="tooltip" data-placement="top" title="superscript">
+				<i class="fa-solid fa-superscript"></i>
+			</button>
 
-            <button type="button" onclick="alignCenter()" data-toggle="tooltip" data-placement="top"
-                title="Center Align">
-                <i class="fa-solid fa-align-center"></i>
-            </button>
+			<button onclick="subScript()" data-toggle="tooltip" data-placement="top" title="subscript">
+				<i class="fa-solid fa-subscript"></i>
+			</button>
 
-            <button type="button" onclick="alignRight()" data-toggle="tooltip" data-placement="top" title="Right Align">
-                <i class="fa-solid fa-align-right"></i>
-            </button>
+			<button onclick="subScript()" data-toggle="tooltip" data-placement="top" title="subscript">
+				<i class="fa-solid fa-list-ol"></i>
+			</button>
 
-            <button type="button" onclick="upperCase()" data-toggle="tooltip" data-placement="top"
-                title="Uppercase Text">
-                Upper Case
-            </button>
+			<button onclick="subScript()" data-toggle="tooltip" data-placement="top" title="subscript">
+				<i class="fa-solid fa-list"></i>
+			</button>
 
-            <button type="button" onclick="lowerCase()" data-toggle="tooltip" data-placement="top"
-                title="Lowercase Text">
-                Lower Case
-            </button>
+			<button onclick="subScript()" data-toggle="tooltip" data-placement="top" title="subscript">
+				<i class="fa-solid fa-rotate-left"></i>
+			</button>
 
-            <button type="button" onclick="capitalize()" data-toggle="tooltip" data-placement="top"
-                title="Capitalize Text">
-                Capitalize
-            </button>
+			<button onclick="subScript()" data-toggle="tooltip" data-placement="top" title="subscript">
+				<i class="fa-solid fa-rotate-right"></i>
+			</button>
 
-            <button type="button" onclick="clearT()" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
-                Clear
-            </button>
-        </div>
+			<button onclick="subScript()" data-toggle="tooltip" data-placement="top" title="subscript">
+				<i class="fa-solid fa-link"></i>
+			</button>
+			<button onclick="subScript()" data-toggle="tooltip" data-placement="top" title="subscript">
+				<i class="fa-solid fa-unlink"></i>
+			</button>
 
-        <!-- <div class="secondtMenu">
-            <button type="button" onclick="f2()" data-toggle="tooltip" data-placement="top" title="Italic Text">
-                <i class="fa-light fa-font-case"></i>
-            </button>
-        </div> -->
 
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Datei</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#">Speichern</a>
-                <a href="#">Drucken</a>
-            </div>
-        </div>
 
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Einfügen</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#">Speichern</a>
-                <a href="#">Drucken</a>
-            </div>
-        </div>
+			<!-- Aligment -->
+			<button onclick="alignLeft()" data-toggle="tooltip" data-placement="top" title="Left Align">
+				<i class="fa-solid fa-align-left"></i>
+			</button>
+			<button onclick="alignCenter()" data-toggle="tooltip" data-placement="top" title="Center Align">
+				<i class="fa-solid fa-align-center"></i>
+			</button>
+			<button onclick="alignRight()" data-toggle="tooltip" data-placement="top" title="Right Align">
+				<i class="fa-solid fa-align-right"></i>
+			</button>
+			<button onclick="justify()" data-toggle="tooltip" data-placement="top" title="justify">
+				<i class="fa-solid fa-align-justify"></i>
+			</button>
+			<button onclick="indent()" data-toggle="tooltip" data-placement="top" title="Indent">
+				<i class="fa-solid fa-indent"></i>
+			</button>
+			<button onclick="outdent()" data-toggle="tooltip" data-placement="top" title="Outdent">
+				<i class="fa-solid fa-outdent"></i>
+			</button>
 
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Bearbeiten</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#">Speichern</a>
-                <a href="#">Drucken</a>
-            </div>
-        </div>
 
-        <!-- <br> -->
+			<!-- Heading -->
+			<select name="headingFormat" id="headingFormat">
+				<option value="H1">H1</option>
+				<option value="H2">H2</option>
+				<option value="H3">H3</option>
+				<option value="H4">H4</option>
+				<option value="H5">H5</option>
+				<option value="H6">H6</option>
+			</select>
 
-        <div>
-            <textarea id="textarea" class="input shadow" name="name" rows="15" cols="100" placeholder="Your text here ">
-			</textarea>
-        </div>
-    </section>
+				<!-- Font -->
+			<select name="fontName" id=""></select>
+			<select name="fontSize" id=""></select>
 
-    <script src="assets/js/index.js"></script>
+
+				<!-- Color -->
+
+
+
+
+			<button onclick="upperCase()" data-toggle="tooltip" data-placement="top" title="Uppercase Text">
+				<i class="fa-solid fa-font-case"></i>
+			</button>
+			<button onclick="lowerCase()" data-toggle="tooltip" data-placement="top" title="Lowercase Text">
+				Lower Case
+			</button>
+			<button onclick="capitalize()" data-toggle="tooltip" data-placement="top" title="Capitalize Text">
+				Capitalize
+			</button>
+			<button onclick="clearT()" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+				Clear
+			</button>
+		</div>
+
+		<div class="secondMenu">
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Datei</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#">Speichern</a>
+					<a href="#">Drucken</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Einfügen</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#">Speichern</a>
+					<a href="#">Drucken</a>
+				</div>
+			</div>
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Bearbeiten</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="#">Speichern</a>
+					<a href="#">Drucken</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="textArea">
+			<textarea id="textarea" class="input shadow" name="name" rows="15" cols="100" placeholder="Your text here ">
+        </textarea>
+		</div>
+
+	</section>
+
+
+	<script src="assets/js/index.js"></script>
 </body>
 
 </html>

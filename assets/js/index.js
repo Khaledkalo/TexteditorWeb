@@ -9,7 +9,34 @@ function bold() {
   function underline() {
     document.getElementById("textarea").style.textDecoration = "underline";
   }
+
+  function strikeThrough(){
+    document.getElementById("textarea").style.textDecoration = "line-through";
+  }
   
+  function superScript(){
+    document.getElementById("textarea").style.textDecoration = "line-through";
+  }
+  
+  function subscript(){
+    document.getElementById("textarea").style.textDecoration = "line-through";
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // Aligmnet
   function alignLeft() {
     document.getElementById("textarea").style.textAlign = "left";
   }
@@ -21,6 +48,28 @@ function bold() {
   function alignRight() {
     document.getElementById("textarea").style.textAlign = "right";
   }
+  function justify() {
+    document.getElementById("textarea").style.textAlign = "justify";
+  }
+  function indent() {
+    document.getElementById("textarea").style.textIndent = "10px";
+  }
+  function outdent() {
+    document.getElementById("textarea").style.textIndent = "-10px";
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
   
   function upperCase() {
     document.getElementById("textarea").style.textTransform = "uppercase";

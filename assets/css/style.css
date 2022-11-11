@@ -1,42 +1,66 @@
 body {
-    margin-left: 20%;
-    margin-right: 27%;
+    background-color: #d4eece;
 }
 
+section {
+    margin-left: 20%;
+    margin-right: 27%;
+    margin-top: 5%;
+    padding: 60px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px #888888;
+}
+
+
 .firstMenu {
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 2px;
     font-size: 20px;
     color: black !important;
-    background-color: #f1f1f1;
     border: none;
+
+
+
 }
 
 .firstMenu button {
-    margin: 5px;
+    margin: 3px;
     border: none;
-    font-size: 20px;
-    color: black !important;
+    font-size: 22px;
+    color: #111;
+    background-color: #fff;
     margin-bottom: 2px;
-    margin-top: 5px;
+}
+
+
+select{
+    padding: 6px;
+    border-radius: 3px;
+}
+
+.secondMenu button {
+    margin-bottom: 4px;
 }
 
 button:hover {
-    background-color: #20e006 !important;
+    background-color: #c0d3bd !important;
 }
 
+/* * * * * * * * *  textarea  * * * * * * * * * * */
 textarea {
     padding: 1%;
     border-color: black;
     height: 400px !important;
+    width: 100%;
     text-align: left;
     font-size: 18px;
 }
 
-/* ***********************************************************/
-/* Dropdown Button */
+/* * * * * * * * * * Dropdown Button * * * * * * * */
 .dropbtn {
     color: black;
+    background-color: #fff;
     padding: 16px;
     font-size: 16px;
     border: none;
